@@ -32,7 +32,7 @@ const budget = {
         {
             title: 'Donations',
             budget: 10
-        },
+        }
     ]
 };
 
@@ -50,24 +50,24 @@ generateTable(budget.myBudget);
 
 function aZ() {
     const newArray = [...budget.myBudget];
-    newArray.sort((a, b) => (a.title > b.title) ? 1 : - 1);
+    newArray.sort((a, b) => (a.title > b.title ? 1 : -1));
     generateTable(newArray);
 }
 
 function zA() {
     const newArray = [...budget.myBudget];
-    newArray.sort((a, b) => (a.title < b.title) ? 1 : - 1);
+    newArray.sort((a, b) => (a.title < b.title ? 1 : -1));
     generateTable(newArray);
 }
 
 function biggerBudget() {
     const newArray = [...budget.myBudget];
-    newArray.sort((a, b) => (a.budget < b.budget) ? 1 : - 1);
+    newArray.sort((a, b) => (a.budget < b.budget ? 1 : -1));
     generateTable(newArray);
 }
 
 function smallerBudget() {
     const newArray = [...budget.myBudget];
-    newArray.sort((a, b) => (a.budget > b.budget) ? 1 : - 1);
+    newArray.sort((a, b) => (a.budget > b.budget ? 1 : -1));
     generateTable(newArray);
 }
